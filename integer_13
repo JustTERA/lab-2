@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int number;
+    // Запитуємо ввести тризначне число
+    cout << "Number: ";
+    cin >> number;
+    // Перевіряємо, чи введене число є тризначним
+    if (number < 100 || number > 999) {
+        cout << "Ви ввели не тризначне число. Будь ласка, спробуйте ще раз." << endl;
+    }
+    else {
+        // Розраховуємо нове число, змінивши порядок цифр
+        int firstDigit = number / 100;
+        int remainingDigits = number % 100;
+        int newNumber = remainingDigits * 10 + firstDigit;
+        // Виводимо отримане число
+        cout << "Result: " << newNumber << endl;
+    }
+    return 0;
+}
