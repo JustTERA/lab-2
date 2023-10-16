@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    double x, y;
+    // Запитуємо ввести координати точки
+    cout << "x: ";
+    cin >> x;
+    cout << "y: ";
+    cin >> y;
+    // Перевіряємо, чи точка лежить в другій або третій координатній чверті
+    if (x < 0 && y < 0) {
+        cout << "The point lies in the third coordinate quarter." << endl;
+    }
+    else if (x > 0 && y < 0) {
+        cout << "The point lies in second coordinate quarter." << endl;
+    }
+    else {
+        cout << "The point does not lie in second or third coordinate quarter." << endl;
+    }
+    return 0;
+}
