@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double x = 2.0;  // Задайте значение x по вашему выбору
+    
+    // Рассчитываем значения отдельных частей выражения
+    double sqrt_e_x = 5.0 * 3.0 * sqrt(exp(x));
+    double sin_part = sin(27.0 + x);
+    double log_part = log(fabs(2 * x)) / log(5);
+
+    // Вычисляем итоговое значение y
+    double y = sqrt_e_x * sin_part * log_part;
+
+    // Выводим результат
+    std::cout << "y = " << y << std::endl;
+
+    return 0;
+}
